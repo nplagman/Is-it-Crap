@@ -11,40 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :brief %>
-    <%= f.text_area :brief %>
+    <%= f.text_area :brief, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :buylink %>
-    <%= f.text_field :buylink %>
+    <%= f.text_field :buylink, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :verdict %>
-    <%= f.text_field :verdict %>
+    <%= f.text_field :verdict, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :category %>
-    <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select one!") %>
-  </div>
-
-    
-
+    <%= select_tag(:category_id, options_for_select(Category.all.map{|c| [ c.name, c.id]}), :prompt => "Select one!") %>
+  </div><br>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -4,7 +4,7 @@
 <% Product.where(category_id: @category.id).each do |product| %>
 <li> <%= product.name %> </li>
 <% end %>
-
+	
 <p>
   <strong>Name:</strong>
   <%= @category.name %>
