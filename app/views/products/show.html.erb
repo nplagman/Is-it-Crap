@@ -2,6 +2,12 @@
 
 <div class="row">
   <div class="col-md-6"> <!-- this is a 2 column setup, putting image in the left column -->
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/#{video_id}"       frameborder="0"></iframe>
+
+
+
+  </div>
     <div class="thumbnail">
       <%= image_tag @product.image.url %>
     </div>
@@ -13,5 +19,6 @@
   </div>
 </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<div class="form-group">
+<%= link_to 'Back', products_path, class: "btn btn-primary" %>
+</div>
