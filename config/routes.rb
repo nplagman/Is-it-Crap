@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'products#index'
-  # get 'pages/about'
+  get 'pages/about' 
 
-  # get 'pages/contact'
+  get 'pages/contact'
 
-  # get 'pages/FAQ'
+  get 'pages/FAQ'
 
   resources :categories
   resources :products
