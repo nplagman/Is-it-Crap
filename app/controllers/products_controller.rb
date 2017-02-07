@@ -8,6 +8,10 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   def show
+   
+  %w(name brief description buylink verdict category_id).each do |attr|
+    instance_variable_set "@#{attr}", @product[attr].present?
+    end
   end
 
   # GET /products/new
@@ -72,6 +76,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id)
+      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image)
     end
 end
