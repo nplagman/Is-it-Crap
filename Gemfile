@@ -21,7 +21,6 @@ gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'bootswatch-rails'
-gem 'fog'
 
 
 
