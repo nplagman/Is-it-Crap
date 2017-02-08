@@ -8,3 +8,6 @@
         <li><%= link_to "Sign In", new_user_session_path %> </li>
         <%end%>
      </ul> -->
+
+
+      <td><%= link_to Category.find(product.category_id).name, category_path(product.category_id) %></td>
