@@ -1,15 +1,17 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_filter :check_user, only: [:edit, :update, :destroy]
 
 
   def index
-    @products = Product.all
+    @products = Product.all.paginate(:page => params[:page], :per_page => 4)
   end
 
   # GET /products/1
   def show
    
-  %w(name brief description buylink verdict category_id).each do |attr|
+  %w(name brief description buylink verdict category_id youtube).each do |attr|
     instance_variable_set "@#{attr}", @product[attr].present?
     end
   end
@@ -76,6 +78,12 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image)
+      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image, :youtube)
+    end
+
+    def check_user
+      if current_user != @product.user
+        redirect_to root_url
+      end
     end
 end
