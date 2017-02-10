@@ -22,6 +22,10 @@ body {
 
 }
 
+.verdict {
+  color: mediumblue;
+}
+
 .navbar-default {
   background-color: #008dd6;
 }
@@ -44,7 +48,7 @@ body {
 .navbar-default .navbar-nav > li > a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: bold;
+
   color: #ffffff;
 }
 
