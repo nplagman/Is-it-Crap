@@ -26,7 +26,7 @@ gem 'fog'
 gem 'figaro'
 gem 'devise' 
 gem 'cancancan'
-
+gem 'fog-aws'
 
 
 
