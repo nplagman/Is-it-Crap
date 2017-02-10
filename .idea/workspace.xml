@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b00b2dd0-0cce-4ac7-a2ef-f564f67238a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/_product.html.erb" afterPath="$PROJECT_DIR$/app/views/products/_product.html.erb" />
-    </list>
+    <list default="true" id="b00b2dd0-0cce-4ac7-a2ef-f564f67238a1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -50,7 +47,18 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="scaffolds.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +70,6 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/products/admin_dash.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/products.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20170210025656_addgoodverdicttoproducts.rb" />
         <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
@@ -81,6 +88,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/_product.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
       </list>
     </option>
   </component>
@@ -499,12 +507,12 @@
       <workItem from="1486693827058" duration="7366000" />
       <workItem from="1486718802120" duration="14000" />
       <workItem from="1486718899813" duration="9974000" />
-      <workItem from="1486741703512" duration="2951000" />
+      <workItem from="1486741703512" duration="3022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25187000" />
+    <option name="totallyTimeSpent" value="25258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,9 +525,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="845" y="194" width="2015" height="1401" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23821591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23821591" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329698" sideWeight="0.49778515" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08764045" sideWeight="0.5044297" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06644518" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -674,13 +682,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/categories.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -912,6 +913,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
