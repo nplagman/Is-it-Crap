@@ -1,6 +1,8 @@
 
 <!--This table only appears for the admin (me) so I can add new products, edit and delete from this page-->
 
+<%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
+
 <% if can? :update, @product %>
     <table>
       <thead>
@@ -26,7 +28,7 @@
 
     <br>
 
-    <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
+
 <% end %>
 
 <!--#### Here starts what everyone can see-->
@@ -49,13 +51,16 @@
         <div class="row">
               <div class="col-md-4">
             <%= render product_group[0] if product_group[0].present? %>
-              </div>
+                </div>
+
               <div class="col-md-4">
             <%= render product_group[1] if product_group[1].present? %>
               </div>
+
               <div class="col-md-4">
             <%= render product_group[2] if product_group[2].present? %>
               </div>
+
         </div>
       <% end %>
     </div>
