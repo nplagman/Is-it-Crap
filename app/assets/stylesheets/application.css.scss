@@ -22,16 +22,13 @@ body {
 
 }
 
-#belowvid {
-  border: 2px solid;
-}
 
-#summary {
-  border: 2px solid;
-}
 
 #showverdict {
-  text-align: right;
+  text-align: left;
+  padding: 10px;
+  background-image: url("");
+
 }
 .verdict {
   color: mediumblue;
@@ -46,8 +43,9 @@ body {
 }
 
 #bs-example-navbar-collapse-1 {
-  
+
 }
+
 
 .navbar-default .navbar-brand {
   font-family: guardian-egyptt, georgia, serif;
