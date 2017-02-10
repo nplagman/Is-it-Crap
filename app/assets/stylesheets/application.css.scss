@@ -23,6 +23,9 @@ body {
 }
 
 
+#briefshow {
+  font-size: 20px;
+}
 
 #showverdict {
   text-align: left;
@@ -80,3 +83,136 @@ body {
 } /*md-6 is the show page, md-3 is on the index page*/
 
 
+#faqbk {
+  background: #2f323b;
+  font-family: 'Roboto', sans-serif;
+  color: #949ba2;
+}
+
+.row {
+  margin: 30px;
+}
+.font-bold {
+  font-weight: 500;
+}
+.c-white, h3 {
+  color: #FFFFFF;
+}
+
+.panel {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #949ba2;
+  border-radius: 3px;
+}
+
+.panel .panel-body {
+  padding: 5px 15px 15px 15px;
+}
+
+.panel.panel-filled .panel-body {
+  padding-top: 10px;
+}
+
+.panel .panel-footer {
+  background-color: transparent;
+  border: none;
+}
+
+.panel > .panel-heading {
+  color: #ffffff;
+}
+
+.panel-tools {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  position: relative;
+}
+
+.panel-tools a {
+  margin-left: 2px;
+  color: #949ba2;
+  cursor: pointer;
+}
+
+.panel-tools a:hover {
+  color: #ffffff;
+}
+
+.panel.panel-c-white {
+  border-left: 3px solid #949ba2;
+}
+
+.panel.panel-c-accent {
+  border-left: 3px solid #f6a821;
+}
+
+.panel.panel-c-primary {
+  border-left: 3px solid #0F83C9;
+}
+
+.panel.panel-c-warning {
+  border-left: 3px solid #f7af3e;
+}
+
+.panel.panel-c-info {
+  border-left: 3px solid #56C0E0;
+}
+
+.panel.panel-c-success {
+  border-left: 3px solid #1bbf89;
+}
+
+.panel.panel-c-danger {
+  border-left: 3px solid #DB524B;
+}
+
+.panel.panel-b-accent {
+  background-color: #f6a821;
+  color: #ffffff;
+}
+
+.panel.panel-b-white {
+  background-color: white;
+  color: #61686f;
+}
+
+.panel.panel-b-white .panel-heading {
+  color: #61686f;
+}
+
+.panel.panel-b-white .panel-footer {
+  color: #61686f;
+}
+
+.panel.panel-filled {
+  background-color: rgba(68, 70, 79, 0.5);
+}
+
+.support-question a {
+  color: #949ba2;
+}
+
+.support-question a:hover {
+  text-decoration: none;
+}
+
+.support-question a:focus {
+  text-decoration: none;
+}
+
+.support-question:hover {
+  background-color: rgba(68, 70, 79, 0.7);
+}
+
+.support-question.active {
+  border-left: 3px solid #f6a821;
+}
+
+.support-question.active .panel-body {
+  padding-left: 13px;
+}
