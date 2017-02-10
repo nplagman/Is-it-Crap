@@ -1,11 +1,13 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_filter :check_user, only: [:edit, :update, :destroy]
+  # before_filter :check_user, only: [:edit, :update, :destroy]
 
+# load_and_authorize_resource  :through => :current_user
 
   def index
-    @products = Product.all.paginate(:page => params[:page], :per_page => 4)
+    @user = current_user ||= ((User.find(session[:user_id]) if session[:user_id]) || User.new)
+    @products = Product.all
   end
 
   # GET /products/1

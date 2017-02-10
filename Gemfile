@@ -24,6 +24,7 @@ gem 'bootswatch-rails'
 gem 'fog'
 gem 'figaro'
 gem 'devise' 
+gem 'cancancan'
 
 
 
