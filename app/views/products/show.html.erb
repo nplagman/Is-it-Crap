@@ -9,6 +9,8 @@
       <%= image_tag(@product.image.large_thumb.to_s) %>
       <h1><%= @product.name %></h1>
       <h2 id="briefshow"><%= @product.brief %></h2>
+      <br>
+
     </div>
 
         <div class="col-md-6"> <!-- this is a 2 column setup, putting image in the right column -->
@@ -22,7 +24,13 @@
   <div class="row">
     <%= render 'showrow2' %>
   </div>
+
+          <div class="row">
+         <img src="https://s3.amazonaws.com/isitcrap/11+brands.JPG" width="400">
+          </div>
 </div>
+
+
 
     
 
