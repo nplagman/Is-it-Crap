@@ -1,11 +1,10 @@
 <%= link_to image_tag(product.image.large_thumb.to_s), product if product.image %>
-<div class="center">
-<h3><%= product.name %></h3>
 
-
+<div class="center" >
+            <p id="size16"><%= product.name %></p>
 
             <p id="briefshow"><%= product.brief %></p>
-            
-            <h2 class="verdict"><%= product.verdict %></h2>
+<div class="btn btn-danger">
+            <p class="verdict"><%= product.verdict %></p></div>
 
 </div>

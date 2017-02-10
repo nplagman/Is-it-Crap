@@ -22,6 +22,10 @@ body {
 
 }
 
+#size16 {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 #briefshow {
   font-size: 20px;
@@ -38,7 +42,9 @@ body {
 
 }
 .verdict {
-  color: mediumblue;
+  color: white;
+
+  font-size: 20px;
 }
 
 .navbar-default {
@@ -70,6 +76,7 @@ body {
 
 .center {
   text-align: center;
+
 }
 
 .col-md-3:nth-child(4n+1) {
