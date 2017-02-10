@@ -4,7 +4,10 @@
             <p id="size16"><%= product.name %></p>
 
             <p id="briefshow"><%= product.brief %></p>
-<div class="btn btn-danger">
-            <p class="verdict"><%= product.verdict %></p></div>
 
-</div>
+            <p class="verdict"><%= link_to (product.verdict), product, class: "btn btn-danger" %></p></div>
+
+
+
+
+
