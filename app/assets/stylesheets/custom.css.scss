@@ -1,11 +1,22 @@
+@import "bootstrap-sprockets";
+@import "bootswatch/spacelab/variables";
 @import "bootstrap";
+@import "bootswatch/spacelab/bootswatch";
 
 body {
 
 }
 
 .navbar-default {
-  background-color: #4e39ef;
+  background-color: #008dd6;
+}
+
+.navbar-default .navbar-collapse {
+  background-color: #008dd6;
+}
+
+#bs-example-navbar-collapse-1 {
+  
 }
 
 .navbar-default .navbar-brand {
