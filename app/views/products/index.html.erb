@@ -1,9 +1,9 @@
 
 <!--This table only appears for the admin (me) so I can add new products, edit and delete from this page-->
+<% if can? :update, @product %>
 
 <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
 
-<% if can? :update, @product %>
     <table>
       <thead>
       <tr>
@@ -31,19 +31,20 @@
 
 <% end %>
 
-<!--#### Here starts what everyone can see-->
+
 
 <div class="row">
 
 <!--### This is the sidebar-->
-
-  <div class="col-md-3">
-  <ul class="nav nav-pills nav-stacked">
-    <li><%= link_to "Category", Category %></li>
-  </ul>
-  </div>
-
+<% if can? :update, @product %>
+        <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li><%= link_to "Category", Category %></li>
+        </ul>
+        </div>
+<% end %>
 <!--## Here is the 3-across grid of products-->
+  <!--#### Here starts what everyone can see-->
 
   <div class="col-md-9">
     <div class="container-fluid">

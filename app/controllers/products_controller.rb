@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  # GET /products/1
+
   def show
    
   %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
@@ -18,19 +18,18 @@ class ProductsController < ApplicationController
     end
   end
 
-  # GET /products/new
+
   def new
     @product = Product.new
     @categories = Category.all.map{|c| [c.name, c.id ] }
   end
 
-  # GET /products/1/edit
+
   def edit
   	@categories = Category.all.map{|c| [ c.name, c.id ] }
   end
 
-  # POST /products
-  # POST /products.json
+
   def create
     @product = Product.new(product_params)
     @product.category_id = params[:category_id] 
@@ -46,8 +45,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /products/1
-  # PATCH/PUT /products/1.json
+
   def update
   	@product.category_id = params[:category_id]
   	
@@ -62,8 +60,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # DELETE /products/1
-  # DELETE /products/1.json
+
   def destroy
     @product.destroy
     respond_to do |format|
