@@ -15,11 +15,10 @@
 
         <div class="col-md-6"> <!-- this is a 2 column setup, putting image in the right column -->
             <%= @product.youtube.html_safe if @product.youtube %>
-
         </div>
   </div>
-  <br>
-  <br>
+<br>
+<br>
 <!--This is the summary on the left and the verdict in the blue box on the right, in a partial-->
   <div class="row">
     <%= render 'showrow2' %>
