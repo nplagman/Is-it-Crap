@@ -1,11 +1,18 @@
-<%= link_to image_tag(product.image.large_thumb.to_s), product if product.image %>
+<div class="w3-container">
+	<p id="size16"><%= product.name %></p>
 
-<div class="center" >
-            <p id="size16"><%= product.name %></p>
+<div class="w3-card-12" style="width:100%">
+<%= link_to image_tag(product.image.large_thumb.to_s, :size => "max-width"), product if product.image %>
+
+<div class="center">
+            
 
             <p id="briefshow"><%= product.brief %></p>
 
-            <p class="verdict"><%= link_to (product.verdict), product, class: "btn btn-danger" %></p></div>
+            <p class="verdict"><%= link_to (product.verdict), product, class: "btn btn-danger" %></p>
+</div>
+</div>
+</div>
 
 
 

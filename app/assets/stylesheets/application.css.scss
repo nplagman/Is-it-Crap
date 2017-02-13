@@ -18,8 +18,14 @@
 @import "bootstrap";
 @import "bootswatch/spacelab/bootswatch";
 
+@import url('http://www.w3schools.com/lib/w3.css');
+
 body {
 
+}
+
+.w3-card-12 {
+  max-width: 300px;
 }
 
 #size16 {
