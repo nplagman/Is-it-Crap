@@ -29,7 +29,7 @@ body {
 }
 
 #size16 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -100,6 +100,10 @@ body {
   background: #2f323b;
   font-family: 'Roboto', sans-serif;
   color: #949ba2;
+}
+
+.thumbnail {
+   box-shadow: 0 0 2px 0 black;
 }
 
 .row {
