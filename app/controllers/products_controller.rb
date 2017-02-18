@@ -7,10 +7,10 @@ class ProductsController < ApplicationController
 
   def index
     @user = current_user ||= ((User.find(session[:user_id]) if session[:user_id]) || User.new)
-    @products = Product.search(params[:term])
+
 
     if params[:category].blank?
-      @products = Product.all.order("created_at DESC")
+      @products = Product.all.order("created_at DESC").search(params[:term])
     else
       @category_id = Category.find_by(name: params[:category]).id
       @products = Product.where(category_id: @category_id).order("created_at DESC")
