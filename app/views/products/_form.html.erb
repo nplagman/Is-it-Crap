@@ -36,17 +36,15 @@
     <%= f.text_field :verdict, class: "form-control" %>
   </div>
 
-
-
   <div class="form-group">
     <%= f.label :youtube %>
     <%= f.text_field :youtube, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.label :category %>
-    <%= select_tag(:category_id, options_for_select(Category.all.map{|c| [ c.name, c.id]}), :prompt => "Select one!") %>
-  </div><br>
+  <div class="form-group">
+    <%= f.label :category_id %>
+    <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose one"}, {class: "btn btn-default dropdown-toggle"} %>
+      <br>
 
   <div class="form-group">
     <%= f.label :image %>
