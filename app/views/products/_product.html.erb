@@ -11,8 +11,7 @@ hr {
       <%= link_to image_tag(product.image.large_thumb.to_s), product if product.image %>
       <div class="caption">
       <hr>
-      
-        <h4><%= product.name %></h4>
+        <h4 id="boldproduct"><%= product.name %></h4>
         <p id="briefshow"><%= product.brief %></p>
         <p class="verdict"><%= link_to (product.verdict), product, class: "btn btn-danger" %></p>
       </div>
