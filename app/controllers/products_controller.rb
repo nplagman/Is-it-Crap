@@ -7,7 +7,8 @@ class ProductsController < ApplicationController
 
   def index
     @user = current_user ||= ((User.find(session[:user_id]) if session[:user_id]) || User.new)
-    @products = Product.all
+    @products = Product.search(params[:term])
+
   end
 
 

@@ -25,7 +25,9 @@
           </tr>
       </tbody>
     </table>
-
+    <ul class="nav nav-pills nav-stacked">
+      <li><%= link_to "Category", Category %></li>
+    </ul>
     <br>
 
 
@@ -36,15 +38,20 @@
 <div class="row">
 
 <!--### This is the sidebar-->
-<% if can? :update, @product %>
+
         <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked">
-          <li><%= link_to "Category", Category %></li>
-        </ul>
+          <ul class="nav navbar-nav marginnav">
+            <li>
+              <%= form_tag(products_path, method: :get) do %>
+                  <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
+                  <%= submit_tag "Search", name: nil %>
+              <% end %>
+            </li>
+          </ul>
+
         </div>
-<% end %>
+
 <!--## Here is the 3-across grid of products-->
-  <!--#### Here starts what everyone can see-->
 
   <div class="col-md-9">
     <div class="container-fluid">
