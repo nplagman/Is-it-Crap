@@ -25,10 +25,7 @@
           </tr>
       </tbody>
     </table>
-    <ul class="nav nav-pills nav-stacked">
-      <li><%= link_to "Category", Category %></li>
-    </ul>
-    <br>
+
 
 
 <% end %>
@@ -48,6 +45,18 @@
               <% end %>
             </li>
           </ul>
+          <div class="btn-group sidebutt">
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SELECT CATEGORY <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <% Category.all.each do |category| %>
+                  <li><%= link_to category.name, products_path(category: category.name) %></li>
+              <% end %>
+            </ul>
+          </div>
+
+
 
         </div>
 
