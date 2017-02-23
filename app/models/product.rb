@@ -1,7 +1,12 @@
 class Product < ApplicationRecord
+	extend FriendlyId
+	friendly_id :name, use: [:finders]
+
 	belongs_to :category
 	belongs_to :user
 	mount_uploader :image, ImageUploader
+
+
 
 	# def self.search(search)
 	# 	where("name ILIKE ?", "%#{search}%")

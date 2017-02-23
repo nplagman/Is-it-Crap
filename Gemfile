@@ -27,6 +27,7 @@ gem 'figaro'
 gem 'devise' 
 gem 'cancancan'
 gem 'fog-aws'
+gem 'friendly_id'
 
 
 

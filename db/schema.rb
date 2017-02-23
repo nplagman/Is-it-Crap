@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170210025656) do
+ActiveRecord::Schema.define(version: 20170223075257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20170210025656) do
     t.string   "youtube"
     t.integer  "user_id"
     t.string   "goodverdict"
+    t.string   "slug"
+    t.index ["slug"], name: "index_products_on_slug", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
