@@ -28,7 +28,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'fog-aws'
 gem 'friendly_id'
-
+gem 'sitemap_generator'
 
 
 
