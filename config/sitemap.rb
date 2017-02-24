@@ -1,5 +1,9 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "https://nickspicks.herokuapp.com"
+SitemapGenerator::Sitemap.adapter = SitemapGenerator::WaveAdapter.new
+SitemapGenerator::Sitemap.sitemaps_host = "http://isitcrap.s3.amazonaws.com/"
+SitemapGenerator::Sitemap.public_path = 'tmp/'
+SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
