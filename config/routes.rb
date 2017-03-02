@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'products#index'
-  get 'pages/about' 
 
-  get 'pages/contact'
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+
+  get 'picks', to: 'pages#picks'
 
   get 'pages/FAQ'
 
-  get 'pages/picks'
+
 
   resources :categories
   resources :products

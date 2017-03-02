@@ -32,3 +32,9 @@ div id="wrapper">
     </ul>
 </div>
 <!-- /#sidebar-wrapper -->
+
+
+<div class="col-md-4" id="belowvid">
+    <h1 id="showverdict"><%= @product.verdict %></h1><br>
+    <%= link_to image_tag("https://s3.amazonaws.com/isitcrap/amazon-Button.png", width: 275), @product.buylink.html_safe, target: :_blank %>
+</div>

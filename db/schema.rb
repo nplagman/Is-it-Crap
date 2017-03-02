@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20170223075257) do
     t.integer  "user_id"
     t.string   "goodverdict"
     t.string   "slug"
-    t.index ["slug"], name: "index_products_on_slug", using: :btree
+    t.index ["slug"], name: "index_products_on_slug", unique: true, using: :btree
   end
 
   create_table "users", force: :cascade do |t|
