@@ -19,6 +19,7 @@ class ProductsController < ApplicationController
 
 
   def show
+    @meta_title = @product.meta_title
    
   %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
     instance_variable_set "@#{attr}", @product[attr].present?
@@ -27,8 +28,10 @@ class ProductsController < ApplicationController
 
 
   def new
+    @meta_title = "Reviews of Amazon Products"
     @product = Product.new
     @categories = Category.all.map{|c| [c.name, c.id ] }
+
   end
 
 
@@ -80,7 +83,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image, :youtube, :user_id, :goodverdict, :term)
+      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image, :youtube, :user_id, :goodverdict, :term, :meta_title)
     end
 
     def check_user
