@@ -14,7 +14,11 @@ hr {
       <hr>
         <h4 id="boldproduct"><%= product.name %></h4>
         <p id="briefshow"><%= product.brief %></p>
-        <p class="verdict"><%= link_to (product.verdict), product, class: "btn btn-danger responsive-width" %></p>
+        <% if product.verdict.present? %>
+        <p class="verdict"><%= link_to (product.verdict), product, class: "btn btn-danger" %></p>
+        <% else %>
+        <p class="verdict"><%= link_to (product.goodverdict), product, class: "btn btn-success" %></p>
+            <% end %>
       </div>
     </div>
 
