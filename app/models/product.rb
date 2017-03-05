@@ -6,7 +6,6 @@ class Product < ApplicationRecord
 	belongs_to :user
 	mount_uploader :image, ImageUploader
 
-	validates :meta_title, presence: true, :length => { :maximum => 60 }
 
 
 	# def self.search(search)
