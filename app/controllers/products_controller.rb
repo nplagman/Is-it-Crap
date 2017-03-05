@@ -20,7 +20,6 @@ class ProductsController < ApplicationController
 
   def show
     @meta_title = @product.meta_title
-
    
   %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
     instance_variable_set "@#{attr}", @product[attr].present?
