@@ -31,7 +31,7 @@ class ProductsController < ApplicationController
     @meta_title = "Reviews of Amazon Products"   ## this doesn't work
     @product = Product.new
     @categories = Category.all.map{|c| [c.name, c.id ] }
-    @maximum_length = Product.validators_on( :meta_title ).first.options[:maximum]
+
   end
 
 
@@ -83,7 +83,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image, :youtube, :user_id, :goodverdict, :term, :meta_title, :meta_description)
+      params.require(:product).permit(:name, :brief, :description, :buylink, :verdict, :category_id, :image, :youtube, :user_id, :goodverdict, :term, :meta_title)
     end
 
     def check_user

@@ -38,27 +38,3 @@ div id="wrapper">
     <h1 id="showverdict"><%= @product.verdict %></h1><br>
     <%= link_to image_tag("https://s3.amazonaws.com/isitcrap/amazon-Button.png", width: 275), @product.buylink.html_safe, target: :_blank %>
 </div>
-
-<%= f.label :meta_title %>
-<div class="form-group">
-    <%= form_for @product do |g| %>
-
-    <%= g.text_field :meta_title, maxlength: @maximum_length, id: 'meta_title', class: "form-control" %>
-
-    Chars left: <span id="counter" data-maximum-length="<%= @maximum_length %>"><%= @maximum_length %></span>
-</div>
-<% end %>
-
-
-<script>
-    $(document).ready(function() {
-        var meta_title = $("#meta_title");
-        var counter     = $("#counter");
-        var max_length  = counter.data("maximum-length");
-
-        meta_title.keyup(function() {
-            counter.text(60 - $(this).val().length);
-        });
-
-    });
-</script>
