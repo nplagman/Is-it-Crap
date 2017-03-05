@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
 
 
   def new
-    @meta_title = "Reviews of Amazon Products"   ## this doesn't work
+    @meta_title = "Reviews of Amazon Products"
     @product = Product.new
     @categories = Category.all.map{|c| [c.name, c.id ] }
 

@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/about.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/about.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
@@ -65,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+              <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -88,18 +87,8 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -128,8 +117,28 @@
       <file leaf-file-name="products_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="177">
+              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,6 +173,7 @@
         <option value="$PROJECT_DIR$/app/views/products/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
         <option value="$PROJECT_DIR$/app/views/pages/picks.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170223075257_add_slug_to_products.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/sitemap.rb" />
@@ -177,12 +187,10 @@
         <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/_showrow2.html.erb" />
         <option value="$PROJECT_DIR$/app/views/products/_product.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20170305151808_add_meta_description_to_products.rb" />
-        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/about.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
+        <option value="$PROJECT_DIR$/app/views/products/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       </list>
     </option>
   </component>
@@ -316,28 +324,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="products" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="isitcrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="isitcrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -662,12 +648,12 @@
       <workItem from="1486718899813" duration="9974000" />
       <workItem from="1486741703512" duration="3022000" />
       <workItem from="1487392437402" duration="8000" />
-      <workItem from="1487392457411" duration="31813000" />
+      <workItem from="1487392457411" duration="31191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57079000" />
+    <option name="totallyTimeSpent" value="56457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,6 +698,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170210025656_addgoodverdicttoproducts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -781,6 +774,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1035,30 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170305150812_add_meta_title_to_products.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170305151808_add_meta_description_to_products.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1075,10 +1052,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170305150812_add_meta_title_to_products.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="225">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1091,34 +1084,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="177">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>

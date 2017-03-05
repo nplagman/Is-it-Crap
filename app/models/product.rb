@@ -7,7 +7,6 @@ class Product < ApplicationRecord
 	mount_uploader :image, ImageUploader
 
 	validates :meta_title, presence: true, :length => { :maximum => 60 }
-	validates :meta_description, presence: true, :length => { :maximum => 160 }
 
 
 	# def self.search(search)
