@@ -1,0 +1,33 @@
+<h1>Nickspicks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Buylink</th>
+      <th>Youtube</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nickspicks.each do |nickspick| %>
+      <tr>
+        <td><%= nickspick.name %></td>
+        <td><%= nickspick.description %></td>
+        <td><%= nickspick.buylink %></td>
+        <td><%= nickspick.youtube %></td>
+        <td><%= nickspick.image %></td>
+        <td><%= link_to 'Show', nickspick %></td>
+        <td><%= link_to 'Edit', edit_nickspick_path(nickspick) %></td>
+        <td><%= link_to 'Destroy', nickspick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nickspick', new_nickspick_path %>

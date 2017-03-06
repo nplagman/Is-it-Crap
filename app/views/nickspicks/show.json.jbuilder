@@ -1,0 +1,1 @@
+json.partial! "nickspicks/nickspick", nickspick: @nickspick

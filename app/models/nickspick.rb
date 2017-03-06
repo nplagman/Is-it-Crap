@@ -1,0 +1,2 @@
+class Nickspick < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.array! @nickspicks, partial: 'nickspicks/nickspick', as: :nickspick
