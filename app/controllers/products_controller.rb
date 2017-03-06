@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
 # load_and_authorize_resource  :through => :current_user
 
   def index
+    @page_title = "Legit or Crap?"
     @user = current_user ||= ((User.find(session[:user_id]) if session[:user_id]) || User.new)
 
 
@@ -19,6 +20,7 @@ class ProductsController < ApplicationController
 
 
   def show
+    @page_title = @product.name
    
   %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
     instance_variable_set "@#{attr}", @product[attr].present?
