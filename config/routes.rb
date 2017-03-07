@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'pages/FAQ'
 
-
+  get 'home', to: 'pages#home'
 
   resources :categories
   resources :products
