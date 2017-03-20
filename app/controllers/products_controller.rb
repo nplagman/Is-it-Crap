@@ -20,7 +20,10 @@ class ProductsController < ApplicationController
 
 
   def show
-    set_meta_tags title: @product.name
+    set_meta_tags title: @product.name,
+                  site: 'True Reviews',
+                  reverse: true,
+                  description: @product.brief
    
   # %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
   #   instance_variable_set "@#{attr}", @product[attr].present?
