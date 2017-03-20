@@ -45,13 +45,10 @@
               <% end %>
             </li>
           </ul>
-          <div class="btn-group sidebutt">
-            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              SELECT CATEGORY <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <% Category.all.each do |category| %>
-                  <li><%= link_to category.name, products_path(category: category.name) %></li>
+          <div class="btn-group-vertical">
+            
+              <% Category.all.order(:name).each do |category| %>
+                  <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-lg" %>
               <% end %>
             </ul>
           </div>
