@@ -23,7 +23,8 @@ class ProductsController < ApplicationController
     set_meta_tags title: @product.name,
                   site: 'True Reviews',
                   reverse: true,
-                  description: @product.brief
+                  description: @product.brief,
+                  keywords: 'reviews, true, legitimate, chinese, amazon, video, trustworthy, home'
    
   # %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
   #   instance_variable_set "@#{attr}", @product[attr].present?
