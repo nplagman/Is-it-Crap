@@ -15,3 +15,8 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+
+<!-- OPENTRACKER START -->
+<script type="text/javascript" defer="defer" src="//script.opentracker.net/?site=nickspicks.herokuapp.com"></script>
+<!-- OPENTRACKER END -->
