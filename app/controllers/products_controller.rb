@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
                   site: 'True Reviews',
                   reverse: true,
                   description: @product.brief,
-                  keywords: 'reviews, true, legitimate, chinese, amazon, video, trustworthy, home'
+                  keywords: 'review, amazon, video, demo, test, fake, true, legitimate, chinese, trustworthy, home'
    
   # %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
   #   instance_variable_set "@#{attr}", @product[attr].present?
