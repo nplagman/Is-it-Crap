@@ -9,7 +9,7 @@
   <% if @product.verdict.present? %>
       <h2><%= @product.verdict %></h2> <br> <%= image_tag('https://s3.amazonaws.com/isitcrap/amazon+gray+button.jpg', width: 275) %>
 <% else %>
- <h4 style="margin: auto;">Verdict =<%= @product.goodverdict %> <br></h4>
+ <h4 style="margin: auto;">Verdict = <%= @product.goodverdict %> <br></h4>
     <%= link_to image_tag("https://s3.amazonaws.com/isitcrap/amazon-Button.png", width: 275), @product.buylink.html_safe, target: :_blank %>
 <% end %>
 
