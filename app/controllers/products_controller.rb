@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 # load_and_authorize_resource  :through => :current_user
 
   def index
-    @page_title = "Legit or Crap?"
+    @page_title = "Binder Bruce"
     @user = current_user ||= ((User.find(session[:user_id]) if session[:user_id]) || User.new)
 
 
@@ -21,10 +21,10 @@ class ProductsController < ApplicationController
 
   def show
     set_meta_tags title: @product.name,
-                  site: 'True Reviews',
+                  site: 'Binder Bruce',
                   reverse: true,
                   description: @product.brief,
-                  keywords: 'review, amazon, video, demo, test, fake, true, legitimate, chinese, trustworthy, home'
+                  keywords: 'international, binder, harvester, truck, scout, classic, vintage, auto, automotive, used, parts, engine, interior, exterior, car, wheel, electric, window, side, trunk, rear'
    
   # %w(name brief description buylink verdict category_id youtube goodverdict).each do |attr|
   #   instance_variable_set "@#{attr}", @product[attr].present?
