@@ -33,6 +33,7 @@ gem 'fog-aws'
 gem 'friendly_id'
 gem 'sitemap_generator'
 gem 'meta-tags'
+gem 'rb-readline'
 
 
 
