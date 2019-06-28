@@ -6,7 +6,7 @@
   <div class="row">
 
     <div class="col-md-6">
-      <%= image_tag(@product.image) %>
+      <%= image_tag(@product.image.large.to_s) %>
       <h1><%= @product.name %></h1>
       <h2 id="briefshow"><%= @product.brief %></h2>
       <br>
