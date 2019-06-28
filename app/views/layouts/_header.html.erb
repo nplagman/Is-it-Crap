@@ -21,7 +21,7 @@
         <li><%= link_to "About", about_path %> </li>
         <li><%= link_to "Contact", contact_path %> </li>
         <li><%= link_to "FAQ", pages_FAQ_path %> </li>
-        <li style="padding-top: 13px;"><%= form_tag(products_path, method: :get) do %>
+        <li style="padding-top: 13px; padding-left: 20px;"><%= form_tag(products_path, method: :get) do %>
                   <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
                   <%= submit_tag "Search", name: nil %>
               <% end %></li>
