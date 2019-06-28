@@ -1,4 +1,5 @@
-<p id="notice"><%= notice %></p>
+<!--This table only appears for the admin (me) so I can add new products, edit and delete from this page-->
+<% if can? :update, @category %>
 
 <h1>Categories</h1>
 
@@ -27,3 +28,6 @@
 <br>
 
 <%= link_to 'New Category', new_category_path %>
+
+
+<% end %>
