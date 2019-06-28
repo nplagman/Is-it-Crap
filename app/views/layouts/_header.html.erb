@@ -10,11 +10,13 @@
       </button>
       <a class="navbar-brand" style="padding: 0px;" href="/"><img alt="Binder Bruce" src="https://isitcrap.s3.amazonaws.com/bblogo.png" style= "max-width: 50px; padding-top: 0px; margin-top: 0px;">
       </a>
+      <div style="align-content: center;"
       <%= form_tag(products_path, method: :get) do %>
-                  <%= text_field_tag :term, params[:term], placeholder: "Search Products", align: center %>
+                  <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
                   <%= submit_tag "Search", name: nil %>
               <% end %>
-    </div>
+            </div>
+    </div></div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
