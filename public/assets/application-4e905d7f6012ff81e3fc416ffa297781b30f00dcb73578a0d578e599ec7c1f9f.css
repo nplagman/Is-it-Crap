@@ -5786,7 +5786,7 @@ tbody.collapse.in {
 /* line 163, /Users/nick/.rvm/gems/ruby-2.3.3/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 15px 0px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
