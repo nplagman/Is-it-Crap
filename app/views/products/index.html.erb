@@ -61,7 +61,7 @@
 
   <div class="col-md-9">
     <div class="container-fluid">
-      <% @products.in_groups_of(4) do |product_group| %>
+      <% @products.in_groups_of(3) do |product_group| %>
         <div class="flex-row row">
               <div class="col-md-3">
             <%= render product_group[0] if product_group[0].present? %>
