@@ -10,12 +10,9 @@
       </button>
       <a class="navbar-brand" style="padding: 0px;" href="/"><img alt="Binder Bruce" src="https://isitcrap.s3.amazonaws.com/bblogo.png" style= "max-width: 50px; padding-top: 0px; margin-top: 0px;">
       </a>
-      <div style="align-content: center;"
-      <%= form_tag(products_path, method: :get) do %>
-                  <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
-                  <%= submit_tag "Search", name: nil %>
-              <% end %>
-            </div>
+     
+      
+           
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,6 +21,11 @@
         <li><%= link_to "About", about_path %> </li>
         <li><%= link_to "Contact", contact_path %> </li>
         <li><%= link_to "FAQ", pages_FAQ_path %> </li>
+        <li><%= form_tag(products_path, method: :get) do %>
+                  <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
+                  <%= submit_tag "Search", name: nil %>
+              <% end %></li>
+
         
       </ul>
      <ul class = "nav navbar-nav navbar-right">
