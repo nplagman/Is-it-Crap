@@ -37,14 +37,14 @@
 <!--### This is the sidebar-->
 
         <div class="col-md-2">
-          <ul class="nav navbar-nav marginnav">
+         <!--  <ul class="nav navbar-nav marginnav">
             <li>
               <%= form_tag(products_path, method: :get) do %>
                   <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
                   <%= submit_tag "Search", name: nil %>
               <% end %>
             </li>
-          </ul>
+          </ul> -->
           <div class="btn-group-vertical">
             
               <% Category.all.order(:name).each do |category| %>
