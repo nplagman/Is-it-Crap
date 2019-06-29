@@ -8,7 +8,7 @@ hr {
 
 
     <div class="thumbnail">
-      <%= link_to image_tag(product.image.large_thumb.to_s), product if product.image %>
+      <%= link_to image_tag(product.image.large.to_s), product if product.image %>
       <!--pretty sure the 'if' doesn't do anything-->
       <div class="caption">
       <hr>
