@@ -38,13 +38,16 @@
 
         <!-- <div class="col-md-1" style="padding-left: 5px;"> -->
    
-          <div class="btn-group">
+          <div class="btn-group" style="margin-bottom: 10px;">
             
               <% Category.all.order(:name).each do |category| %>
                   <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
               <% end %>
             
           </div>
+          <div class="btn-group">
+              <a href="/products"><button type="button" class="btn btn-default">All Products</button></a>
+          </div> 
     
 
 
