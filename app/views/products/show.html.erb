@@ -28,15 +28,15 @@
         <li><%= @product.bullet1 %></li>
       <% end %>
 
-      <% if @product.bullet2 %>
+      <% if @product.bullet2.present? %>
         <li><%= @product.bullet2 %></li>
       <% end %>
 
-      <% if @product.bullet3 %>
+      <% if @product.bullet3.present? %>
         <li><%= @product.bullet3 %></li>
       <% end %>
 
-      <% if @product.bullet4 %>
+      <% if @product.bullet4.present? %>
         <li><%= @product.bullet4 %></li>
       <% end %>
     </ul>
