@@ -9105,6 +9105,7 @@ button.close {
   word-wrap: break-word;
   margin: auto;
   max-width: 90%;
+  text-align: left;
 }
 
 /* line 34, /Users/nick/isitcrap/app/assets/stylesheets/application.css.scss */
