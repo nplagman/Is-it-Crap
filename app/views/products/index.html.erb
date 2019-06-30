@@ -13,11 +13,11 @@
       </thead>
 
 
-      <tbody>
+      <tbody style="padding: 0px 10px;">
       <% @products.each do |product| %>
           <tr>
             <td nowrap><%= product.name %></td>
-            <td style="padding: 0px 10px;"><%= product.category_id %></td>
+            <td ><%= product.category_id %></td>
             <td><%= link_to 'Show', product %></td>
             <td><%= link_to 'Edit', edit_product_path(product) %></td>
             <td><%= button_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?' } %></td>
