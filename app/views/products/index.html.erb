@@ -13,14 +13,14 @@
       </thead>
 
 
-      <tbody style="padding: 0px 10px;">
+      <tbody >
       <% @products.each do |product| %>
           <tr>
             <td nowrap><%= product.name %></td>
-            <td ><%= product.category_id %></td>
-            <td><%= link_to 'Show', product %></td>
-            <td><%= link_to 'Edit', edit_product_path(product) %></td>
-            <td><%= button_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?' } %></td>
+            <td style="padding: 0px 10px;"><%= product.category_id %></td>
+            <td style="padding: 0px 5px;"><%= link_to 'Show', product %></td>
+            <td style="padding: 0px 5px;"><%= link_to 'Edit', edit_product_path(product) %></td>
+            <td style="padding: 0px 5px;"><%= button_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?' } %></td>
       <% end %>
           </tr>
       </tbody>
