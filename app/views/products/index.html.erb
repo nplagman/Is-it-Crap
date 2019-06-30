@@ -7,7 +7,7 @@
     <table>
       <thead>
       <tr>
-        <th width="40%">Name</th>
+        <th>Name</th>
         <th>Category ID</th>
       </tr>
       </thead>
@@ -16,7 +16,7 @@
       <tbody>
       <% @products.each do |product| %>
           <tr>
-            <td style="width: 20px;"><%= product.name %></td>
+            <td nowrap><%= product.name %></td>
             <td><%= product.category_id %></td>
             <td><%= link_to 'Show', product %></td>
             <td><%= link_to 'Edit', edit_product_path(product) %></td>
