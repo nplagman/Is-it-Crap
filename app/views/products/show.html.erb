@@ -10,16 +10,12 @@
 
       
         
-          <h2 id="briefshow">        
-        
+          <h2 id="briefshow"><%= @product.price %>
+                
           <% if @product.part_number %>
           Part #:
           <%= @product.part_number %>
           <% end %>
-
-          <span style="text-align: right;"><%= @product.price %>
-
-
         </h2>
       
 
