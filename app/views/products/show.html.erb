@@ -4,7 +4,12 @@
 
 <div class="container">
   <div class="row">
+        <div class="col-md-6"> <!-- this is a 2 column setup, putting image in this left half -->
+        <%= image_tag(@product.image.large.to_s, class: "img-responsive") %>    
+        </div>
 
+
+        
     <div class="col-md-6">
       <h2><%= @product.name %></h2>
     <table nowrap id="briefshow">
@@ -53,9 +58,7 @@
 
     </div>
 
-        <div class="col-md-6"> <!-- this is a 2 column setup, putting image in this right half -->
-        <%= image_tag(@product.image.large.to_s, class: "img-responsive") %>    
-        </div>
+
   </div>
 
 
