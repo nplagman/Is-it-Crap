@@ -10,8 +10,8 @@ hr {
 </style>
 
 
-    <div class="thumbnail" style="max-width: 300px; min-width: 200px; border: 0px; box-shadow: none; margin-bottom: 10px; padding: 2px;">
-      <%= link_to image_tag(product.image.large_thumb.to_s), product if product.image %>
+    <div class="thumbnail" style="min-width: 200px; border: 0px; box-shadow: none; margin-bottom: 10px; padding: 2px;">
+      <%= link_to image_tag(product.image.large.to_s), product if product.image %>
       <!--pretty sure the 'if' doesn't do anything-->
       <div class="caption">
       <hr>
