@@ -49,6 +49,7 @@
             
               <% Category.all.order(:name).each do |category| %>
                   <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
+                  <%= link_to 'Show', product, class: "btn btn-primary btn-md" %>
               <% end %>
             </ul>
           </div>
@@ -63,7 +64,7 @@
     <div class="container-fluid" style="padding-left: 5px;">
       <% @products.in_groups_of(3) do |product_group| %>
         
-              <div class="col-md-4">
+              <div class="col-md-4" style="padding-left: 5px;">
             <%= render product_group[0] if product_group[0].present? %>
                 </div>
 
