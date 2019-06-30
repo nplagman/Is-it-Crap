@@ -38,12 +38,12 @@
 
         <!-- <div class="col-md-1" style="padding-left: 5px;"> -->
    
-          <div class="btn-toolbar">
+          <div class="btn-group">
             
               <% Category.all.order(:name).each do |category| %>
                   <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
               <% end %>
-            </ul>
+            
           </div>
     
 
