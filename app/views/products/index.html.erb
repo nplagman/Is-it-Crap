@@ -36,7 +36,7 @@
 
 <!--### This is the sidebar-->
 
-        <div class="col-md-1">
+        <div class="col-md-1" style="padding-left: 5px;">
          <!--  <ul class="nav navbar-nav marginnav">
             <li>
               <%= form_tag(products_path, method: :get) do %>
@@ -59,11 +59,11 @@
 
 <!--## Here is the 3-across grid of products-->
 
-  <div class="col-md-9" style="padding-left: 5px;">
-    <div class="container-fluid" style="padding-left: 5px;">
+  <div class="col-md-9">
+    <div class="container-fluid">
       <% @products.in_groups_of(3) do |product_group| %>
         
-              <div class="col-md-4" style="padding-left: 5px;">
+              <div class="col-md-4">
             <%= render product_group[0] if product_group[0].present? %>
                 </div>
 
