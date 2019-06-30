@@ -7,11 +7,17 @@
 
     <div class="col-md-6">
       <h2><%= @product.name %></h2>
-    <table>
+    <table nowrap id="briefshow">
      
        <tr>
             <td>Price</td>
-            <td nowrap id="briefshow"><%= @product.price %></td>            
+            <td><%= @product.price %></td>            
+       </tr>
+
+       <% if @product.part_number %>
+       <tr>
+            <td>Part #:</td>
+            <td><%= @product.part_number %></td>            
        </tr>
       
     </table>
@@ -19,9 +25,9 @@
         
           <br>
                 
-          <% if @product.part_number %>
+          
           Part #:
-          <%= @product.part_number %>
+          
           <% end %>
         </h2>
       
