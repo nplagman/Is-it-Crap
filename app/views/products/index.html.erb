@@ -20,7 +20,7 @@
             <td><%= product.category_id %></td>
             <td><%= link_to 'Show', product %></td>
             <td><%= link_to 'Edit', edit_product_path(product) %></td>
-            <td><%= button_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= button_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?' } %></td>
       <% end %>
           </tr>
       </tbody>
@@ -37,19 +37,24 @@
 <!--### This is the sidebar-->
 
         <div class="col-md-1" style="padding-left: 5px;">
-         <!--  <ul class="nav navbar-nav marginnav">
-            <li>
-              <%= form_tag(products_path, method: :get) do %>
-                  <%= text_field_tag :term, params[:term], placeholder: "Search Products" %>
-                  <%= submit_tag "Search", name: nil %>
-              <% end %>
-            </li>
-          </ul> -->
+   
           <div class="btn-group-vertical">
             
               <% Category.all.order(:name).each do |category| %>
-                  <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
+                  <%= link_to category.name, products_path.(category: category.name), class: "btn btn-primary btn-md" %>
               <% end %>
+            </ul>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><% Category.all.order(:name).each do |category| %>
+                  <%= link_to category.name, products_path.(category: category.name), class: "btn btn-primary btn-md" %>
+              <% end %></li>
+              <li><a href="#">Dropdown link</a></li>
             </ul>
           </div>
 
