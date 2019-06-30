@@ -11,8 +11,12 @@
       <h2 id="briefshow"><%= @product.price %></h2>
       <p style="font-size: 14px;">Part Number:</p>
     <ul>
-      <% @product do |product.bullet| %>
-      <li><%= render product.bullet1 if product.bullet1.present? %></li>
+
+      
+
+
+      <% if @product.bullet1 %>
+      <li><%= product.bullet1  %></li>
       <% end %>
       <li><%= @product.bullet2 %></li>
       <li><%= @product.bullet3 %></li>
