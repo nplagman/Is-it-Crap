@@ -25,7 +25,7 @@
 
     <ul>
       <% if @product.bullet1 %>
-        <li><%= @product.bullet1 %></li>
+        <li><%= render @product.bullet1 if @product.bullet1.present?  %></li>
       <% end %>
 
       <% if @product.bullet2 %>
