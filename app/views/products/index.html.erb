@@ -48,7 +48,7 @@
           <div class="btn-group-vertical">
             
               <% Category.all.order(:name).each do |category| %>
-                  <%= link_to category.name, products_path(category: category.name).present?, class: "btn btn-primary btn-md" %>
+                  <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
               <% end %>
             </ul>
           </div>
