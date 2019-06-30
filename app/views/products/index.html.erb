@@ -46,7 +46,7 @@
             </li>
           </ul> -->
           <div class="btn-group-vertical">
-            
+            <ul>
               <% Category.all.order(:name).each do |category| %>
                   <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
                   <%= button_to product, class: "btn btn-primary btn-md" %>
