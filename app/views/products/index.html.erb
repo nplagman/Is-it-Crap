@@ -36,7 +36,7 @@
 
 <!--### This is the sidebar-->
 
-        <div class="col-md-2">
+        <div class="col-md-1">
          <!--  <ul class="nav navbar-nav marginnav">
             <li>
               <%= form_tag(products_path, method: :get) do %>
@@ -59,7 +59,7 @@
 
 <!--## Here is the 3-across grid of products-->
 
-  <div class="col-md-9">
+  
     <div class="container-fluid">
       <% @products.in_groups_of(3) do |product_group| %>
         
@@ -82,7 +82,7 @@
       <% end %>
 
     </div>
-  </div>   
+  
 </div>
 
 
