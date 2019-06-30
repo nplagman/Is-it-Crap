@@ -4,35 +4,21 @@
 
 <div class="container">
   <div class="row">
-        <div class="col-md-6"> <!-- this is a 2 column setup, putting image in this left half -->
+
+    <div class="col-md-6"> <!-- this is a 2 column setup, putting image in this right half -->
         <%= image_tag(@product.image.large.to_s, class: "img-responsive") %>    
         </div>
 
-
-        
     <div class="col-md-6">
       <h2><%= @product.name %></h2>
-    <table nowrap id="briefshow">
-     
-       <tr>
-            <td>Price</td>
-            <td><%= @product.price %></td>            
-       </tr>
 
-       <% if @product.part_number %>
-       <tr>
-            <td>Part #:</td>
-            <td><%= @product.part_number %></td>            
-       </tr>
-      
-    </table>
       
         
-          <br>
+          <h2 id="briefshow"><%= @product.price %><br>
                 
-          
+          <% if @product.part_number %>
           Part #:
-          
+          <%= @product.part_number %>
           <% end %>
         </h2>
       
@@ -58,7 +44,7 @@
 
     </div>
 
-
+        
   </div>
 
 
