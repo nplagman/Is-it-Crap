@@ -6,17 +6,24 @@
   <div class="row">
 
     <div class="col-md-6">
-      <div>
-        <div class="col-md-6">testes
-        </div>
-        <div class="col-md-6">testestetseteste
-        </div>  
-      </div>
       <h2><%= @product.name %></h2>
 
-      <h2 id="briefshow"><%= @product.price %></h2>
+      <div>
+        <div class="col-md-6">
+          <h2 id="briefshow"><%= @product.price %></h2>
+        </div>
+        <div class="col-md-6">
+          <% if @product.part_number %>
+          <p style="font-size: 18px;">Part #:
+          <%= @product.part_number %></p>
+          <% end %>
+        </div>  
+      </div>
+      
 
-      <p style="font-size: 18px;">Part #:</p>
+      
+
+      
 
     <ul>
       <% if @product.bullet1 %>
