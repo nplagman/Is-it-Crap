@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190628203220) do
+ActiveRecord::Schema.define(version: 20190630174605) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20190628203220) do
     t.text     "bullet2"
     t.text     "bullet3"
     t.text     "bullet4"
+    t.string   "part_number"
     t.index ["slug"], name: "index_products_on_slug", using: :btree
   end
 
