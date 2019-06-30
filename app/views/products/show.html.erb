@@ -16,7 +16,7 @@
         
       <p class="openred" style="font-size: 24px;"><%= @product.price %></p>
                 
-          <% if @product.part_number %>
+          <% if @product.part_number.present? %>
           Part #:
           <%= @product.part_number %>
           <% end %>
