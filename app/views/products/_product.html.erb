@@ -3,11 +3,12 @@ hr {
     /*display: block;*/
     border-color: #8f8f8f;
     border-width: 3px;
+    max-width: 70%;
 } 
 </style>
 
 
-    <div class="thumbnail" style="max-width: 300px; min-width: 200px; border: 0px; box-shadow: none;">
+    <div class="thumbnail" style="max-width: 300px; min-width: 200px; border: 0px; box-shadow: none; margin-bottom: 10px; padding: 2px;">
       <%= link_to image_tag(product.image.large_thumb.to_s), product if product.image %>
       <!--pretty sure the 'if' doesn't do anything-->
       <div class="caption">
