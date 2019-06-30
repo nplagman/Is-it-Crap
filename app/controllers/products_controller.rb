@@ -45,7 +45,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    @product.category_id = params[:category_id] 
+    @product.category_id = Category.find(params[:category_id]) 
 
     respond_to do |format|
       if @product.save
