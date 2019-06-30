@@ -45,18 +45,7 @@
               <% end %>
             </ul>
           </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><% Category.all.order(:name).each do |category| %>
-                  <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
-              <% end %></li>
-              <li><a href="#">Dropdown link</a></li>
-            </ul>
-          </div>
+    
 
 
 
