@@ -41,7 +41,7 @@
           <div class="btn-group-vertical">
             
               <% Category.all.order(:name).each do |category| %>
-                  <%= link_to category.name, products_path.(category: category.name), class: "btn btn-primary btn-md" %>
+                  <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
               <% end %>
             </ul>
           </div>
@@ -52,7 +52,7 @@
             </button>
             <ul class="dropdown-menu">
               <li><% Category.all.order(:name).each do |category| %>
-                  <%= link_to category.name, products_path.(category: category.name), class: "btn btn-primary btn-md" %>
+                  <%= link_to category.name, products_path(category: category.name), class: "btn btn-primary btn-md" %>
               <% end %></li>
               <li><a href="#">Dropdown link</a></li>
             </ul>
