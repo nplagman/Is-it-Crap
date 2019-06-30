@@ -17,6 +17,12 @@
   </div>
 
   <div class="form-group">
+    <%= f.label :category_id %>
+    <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose one"}, {class: "btn btn-default dropdown-toggle"} %>
+  </div>    
+      <br>
+
+  <div class="form-group">
     <%= f.label :price %>
     <%= f.text_field :price, class: "form-control" %>
   </div>
@@ -27,35 +33,26 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :description %>
-    <%= f.text_area :description, class: "form-control" %>
+    <%= f.label :bullet1 %>
+    <%= f.text_field :bullet1, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :buylink %>
-    <%= f.text_field :buylink, class: "form-control" %>
+    <%= f.label :bullet2 %>
+    <%= f.text_field :bullet2, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :verdict %>
-    <%= f.text_field :verdict, class: "form-control" %>
-  </div>
-
-    <div class="form-group">
-      <%= f.label :goodverdict %>
-      <%= f.text_field :goodverdict, class: "form-control" %>
-    </div>
-
-  <div class="form-group">
-    <%= f.label :youtube %>
-    <%= f.text_field :youtube, class: "form-control" %>
+    <%= f.label :bullet3 %>
+    <%= f.text_field :bullet3, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :category_id %>
-    <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose one"}, {class: "btn btn-default dropdown-toggle"} %>
-  </div>    
-      <br>
+    <%= f.label :bullet4 %>
+    <%= f.text_field :bullet4, class: "form-control" %>
+  </div>
+
+
 
   <div class="form-group">
     <%= f.label :image %>
