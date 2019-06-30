@@ -9,21 +9,16 @@
       <h2><%= @product.name %></h2>
 
       <div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <h2 id="briefshow"><%= @product.price %></h2>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <% if @product.part_number %>
           <p style="font-size: 18px;">Part #:
           <%= @product.part_number %></p>
           <% end %>
         </div>  
-      </div>
-      
-
-      
-
-      
+      </div> 
 
     <ul>
       <% if @product.bullet1 %>
