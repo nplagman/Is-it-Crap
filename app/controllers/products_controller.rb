@@ -58,7 +58,7 @@ class ProductsController < ApplicationController
 
 
   def update
-  	@product.category_id = params[:category_id]
+  	# @product.category_id = params[:category_id]
   	
     respond_to do |format|
       if @product.update(product_params)
