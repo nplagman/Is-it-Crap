@@ -8,11 +8,13 @@
     <div class="col-md-6">
       
       <h1><%= @product.name %></h1>
-      <h2 id="briefshow"><%= @product.price %></h2>
-      <h3><%= @product.bullet1 %></h3>
-      <h3><%= @product.bullet2 %></h3>
-      <h3><%= @product.bullet3 %></h3>
-      <h3><%= @product.bullet4 %></h3>
+      <h2><%= @product.price %></h2>
+    <ul>
+      <li><%= @product.bullet1 %></li>
+      <li><%= @product.bullet2 %></li>
+      <li><%= @product.bullet3 %></li>
+      <li><%= @product.bullet4 %></li>
+    </ul>
       <br>
 
     </div>
