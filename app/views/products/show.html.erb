@@ -1,13 +1,20 @@
 <div class="back">
   <%= link_to 'Back', products_path, class: "btn btn-primary" %>
 </div>
+<% @product.images.each do |image| %>
 
+      <%= image_tag image %>
+
+    <% end %>  
 <div class="container">
   <div class="row">
 
     <div class="col-md-6"> <!-- this is a 2 column setup, putting image in this right half -->
         <%= image_tag(@product.image.large.to_s, class: "img-responsive") %>    
         </div>
+
+
+    
 
     <div class="col-md-6">
       <h2><%= @product.name %></h2>
