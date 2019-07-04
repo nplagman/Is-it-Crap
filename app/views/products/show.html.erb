@@ -1,11 +1,14 @@
 <div class="back">
   <%= link_to 'Back', products_path, class: "btn btn-primary" %>
 </div>
-<% @product.images.each do |image| %>
 
-      <%= image_tag image %>
 
-    <% end %>  
+
+<% 0...@product.images.count).each do |image| %>
+  <%= image_tag(@product.images[image]) %>
+
+  <% end %>
+
 <div class="container">
   <div class="row">
 
