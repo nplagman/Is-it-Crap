@@ -78,7 +78,12 @@ class ProductsController < ApplicationController
     end
   end
 
-
+  def remove_attachment
+    @img = ActiveStorage::Attachment.find(params[:id])
+    @product = @img.record
+    @img.purge
+    redirect_to @product
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

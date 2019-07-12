@@ -14,7 +14,11 @@ Rails.application.routes.draw do
   get 'home', to: 'pages#home'
 
   resources :categories
-  resources :products 
+  resources :products do
+    member do
+      delete :remove_attachment
+end
+end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
