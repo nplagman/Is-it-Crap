@@ -45,7 +45,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    
+    # @product.images.attach(params[:images])
 
     respond_to do |format|
       if @product.save
@@ -77,6 +77,8 @@ class ProductsController < ApplicationController
 
     end
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

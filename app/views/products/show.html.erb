@@ -2,19 +2,18 @@
   <%= link_to 'Back', products_path, class: "btn btn-primary" %>
 </div>
 
+<% @product.images.each do |img| %>
+
+<%= image_tag img, style: "max-width: 600px;" %>
 
 
-<% 0...@product.images.count).each do |image| %>
-  <%= image_tag(@product.images[image]) %>
+<% end %>
 
-  <% end %>
 
 <div class="container">
   <div class="row">
+    <div class="col-md-6">
 
-   <!--  <div class="col-md-6"> this is a 2 column setup, putting image in this right half
-        <%= image_tag(@product.image, class: "img-responsive") %>    
-        </div> -->
 
 
     
