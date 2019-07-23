@@ -12,7 +12,8 @@ hr {
 
     <div class="thumbnail" style="min-width: 200px; border: 0px; box-shadow: none; margin-bottom: 10px; padding: 2px;">
       <% (0...product.images.count).each do |image| %>
-        <%= image_tag(product.thumbnail(image)) %>
+        <%= link_to image_tag(product.thumbnail(image)), product %>
+     
         <% end %>
 
       <div class="caption">
