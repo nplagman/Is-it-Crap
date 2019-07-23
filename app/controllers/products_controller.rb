@@ -85,6 +85,18 @@ class ProductsController < ApplicationController
     redirect_to @product
   end
 
+# def make_image_featured
+#     @images = ActiveStorage::Attachment.find(params[:id])
+#     @images.update_attributes(:fpic => true)
+#     redirect_back(fallback_location: products_path)
+#   end
+
+#   def reset_featured
+#     @images = ActiveStorage::Attachment.where(:record_id => params[:id])
+#     @images.update_all(:fpic => false)
+#   redirect_back(fallback_location: products_path)
+# end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

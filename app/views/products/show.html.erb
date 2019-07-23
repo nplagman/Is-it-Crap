@@ -2,9 +2,12 @@
   <%= link_to 'Back', products_path, class: "btn btn-primary" %>
 </div>
 
+
+
 <% @product.images.each do |img| %>
 
 <%= image_tag img, style: "max-width: 600px;" %>
+
 <%= link_to "x", remove_attachment_product_path(img), method: :delete %>
 
 <% end %>

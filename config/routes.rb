@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   resources :products do
     member do
       delete :remove_attachment
+      # get :make_image_featured
+      # get :reset_featured
 end
 end
 
