@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   # before_filter :check_user, only: [:edit, :update, :destroy]
 
 # load_and_authorize_resource  :through => :current_user
@@ -45,7 +45,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-    
+    # @product.images.attach(params[:images])
 
     respond_to do |format|
       if @product.save
@@ -78,6 +78,25 @@ class ProductsController < ApplicationController
     end
   end
 
+  def remove_attachment
+    @img = ActiveStorage::Attachment.find(params[:id])
+    @product = @img.record
+    @img.purge
+    redirect_to @product
+  end
+
+# def make_image_featured
+#     @images = ActiveStorage::Attachment.find(params[:id])
+#     @images.update_attributes(:fpic => true)
+#     redirect_back(fallback_location: products_path)
+#   end
+
+#   def reset_featured
+#     @images = ActiveStorage::Attachment.where(:record_id => params[:id])
+#     @images.update_all(:fpic => false)
+#   redirect_back(fallback_location: products_path)
+# end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -86,7 +105,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :part_number, :brief, :price, :bullet1, :bullet2, :bullet3, :bullet4, :description, :buylink, :verdict, :category_id, :image, :youtube, :user_id, :goodverdict, :term)
+      params.require(:product).permit(:name, :main_picture, :part_number, :brief, :price, :bullet1, :bullet2, :bullet3, :bullet4, :description, :buylink, :verdict, :category_id, :image, :youtube, :user_id, :goodverdict, :term, images: [])
     end
 
     def check_user

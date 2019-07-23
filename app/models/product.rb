@@ -2,11 +2,15 @@ class Product < ApplicationRecord
 	extend FriendlyId
 	friendly_id :name, use: [:finders]
 
-	belongs_to :category
-	belongs_to :user
-	mount_uploader :image, ImageUploader
+	belongs_to :category, optional: true
+	belongs_to :user, optional: true
+	has_many_attached :images
+	has_one_attached :main_picture
+	# mount_uploader :image, ImageUploader
 
-
+	# def thumbnail input
+	#   return self.main_picture[input].variant(resize: '300x300').processed
+	# end
 
 	# def self.search(search)
 	# 	where("name ILIKE ?", "%#{search}%")
