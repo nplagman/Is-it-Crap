@@ -8,9 +8,9 @@ class Product < ApplicationRecord
 	has_one_attached :main_picture
 	# mount_uploader :image, ImageUploader
 
-	def thumbnail input
-	  return self.images[input].variant(resize: '300x300').processed
-	end
+	# def thumbnail input
+	#   return self.main_picture[input].variant(resize: '300x300').processed
+	# end
 
 	# def self.search(search)
 	# 	where("name ILIKE ?", "%#{search}%")

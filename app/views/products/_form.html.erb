@@ -19,8 +19,7 @@
   <div class="form-group">
     <%= f.label :category_id %>
     <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose one"}, {class: "btn btn-default dropdown-toggle"} %>
-  </div>    
-      
+  </div>      
 
   <div class="form-group">
     <%= f.label :price %>
@@ -50,6 +49,11 @@
   <div class="form-group">
     <%= f.label :bullet4 %>
     <%= f.text_field :bullet4, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :main_picture %>
+    <%= f.file_field :main_picture, class: "form-control" %>
   </div>
 
   <div class="form-group">

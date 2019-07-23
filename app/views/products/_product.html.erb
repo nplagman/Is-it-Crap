@@ -11,10 +11,11 @@ hr {
 
 
     <div class="thumbnail" style="min-width: 200px; border: 0px; box-shadow: none; margin-bottom: 10px; padding: 2px;">
-      <% (0...product.images.count).each do |image| %>
-        <%= link_to image_tag(product.thumbnail(image)), product %>
-     
-        <% end %>
+    
+    <% if product.main_picture.attached? %>
+        <%= link_to image_tag(product.main_picture, style: 'max-width: 250px'), product %>
+     <% end %>
+        
 
       <div class="caption">
       <hr>
@@ -27,4 +28,4 @@ hr {
 
 
 
-
+<!-- image_tag @blog_post.main_picture.variant(resize: '700x700') -->
