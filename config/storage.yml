@@ -10,5 +10,5 @@ amazon:
   service: S3
   access_key_id: <%= ENV['aws_access_key_id'] %>
   secret_access_key: <&= ENV['aws_secret_access_key'] %>
-  bucket: isitcrap
+  bucket: binderbruce69
   region: us-east-1 # e.g. 'us-east-1'
