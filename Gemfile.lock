@@ -1247,7 +1247,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk
+  aws-sdk (~> 3.0, >= 3.0.1)
   aws-sdk-s3
   bootstrap-sass
   bootswatch-rails
