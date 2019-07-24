@@ -35,7 +35,7 @@ gem 'sitemap_generator'
 gem 'meta-tags'
 gem 'rb-readline'
 gem 'aws-sdk-s3', require: false
-gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
+gem 'aws-sdk'
 
 
 
