@@ -1,5 +1,17 @@
 <div class="back">
-  <%= link_to 'Back', products_path, class: "btn btn-primary" %>
+  <%= link_to 'All Products', products_path, class: "btn btn-primary" %>
+
+  <% if can? :update, @product %>
+<!-- only admin can see button to edit -->
+  <%= link_to 'Edit Product', edit_product_path(@product), class: "btn btn-primary" %>
+  <%= link_to 'New Product', new_product_path(@product), class: "btn btn-primary" %>
+
+<!--   Look at line 2, it's link to products_path, ie where all the products are. To link back to the relevant one, it's singular, product_path. Then I just threw the "new" or "edit" in front, and put @product in the parenths, I assume so it knows what product.  -->
+
+
+
+
+  <% end %>
 </div>
 
 

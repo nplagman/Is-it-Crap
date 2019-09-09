@@ -2,23 +2,25 @@
 hr { 
     /*display: block;*/
     border-color: #8f8f8f;
-    border-width: 0px;
-    max-width: 80%;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    border-width: 2px;
+    max-width: 90%;
+    margin-bottom: 2px;
+    margin-top: 15px;
 } 
 </style>
 
 
-    <div class="thumbnail" style="min-width: 200px; border: 0px; box-shadow: none; margin-bottom: 10px; padding: 2px;">
+    <div class="thumbnail">
+      
+    </style>
     
     <% if product.main_picture.attached? %>
-        <%= link_to image_tag(product.main_picture, style: 'max-width: 250px'), product %>
+        <%= link_to image_tag(product.main_picture, style: 'max-height: 400px'), product %>
      <% end %>
         
-
+<hr>
       <div class="caption">
-      <hr>
+      
         <h4 id="boldproduct" class="responsive-width" style="margin-left: 5px;"><%= product.name %></h4>
         <p id="briefshow" style="margin-left: 5px;"><%= product.price %></p>
 

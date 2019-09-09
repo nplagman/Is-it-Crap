@@ -32,7 +32,8 @@ body {
   max-width: 90%;
 }
 #boldproduct {
-  font-weight: bold;
+  font-weight: 2em;
+  font-family: open-sans;
 }
 
 .openred {
@@ -42,6 +43,35 @@ body {
   font-size: 24px;
 }
 
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: left;
+  
+  object-fit: cover;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
 .sidebutt {
   margin: auto;
 }
@@ -129,6 +159,8 @@ body {
 
 .thumbnail {
    box-shadow: 0 0 2px 0 black;
+   object-fit: fill;
+
 }
 
 .row {
